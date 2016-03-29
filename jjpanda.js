@@ -26,8 +26,8 @@
 				dataType: 'jsonp',
 				method: 'post',
 				data: {
-					to_email: to_email,
-					from_email: from_email	
+					to_email: toEmail,
+					from_email: fromEmail	
 				},
 				success: function(data){
 					var id = data.statisticId;
