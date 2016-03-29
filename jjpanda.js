@@ -35,10 +35,10 @@
 
 					if (tinyMCE.activeEditor) {
 						content = tinyMCE.activeEditor.getContent();
-						tinyMCE.activeEditor.setContent(content + '<img src="' + baseUrl + '/web-mail/track/open?to_email='+toList[i]+'&statistic_id=' + id + '" />');
+						tinyMCE.activeEditor.setContent(content + '<img src="' + baseUrl + '/web-mail/track/open?to_email=' + toEmail + '&statistic_id=' + id + '" />');
 					} else {
 						content = $('#composebody').val();
-						$('#composebody').val(content + '<img src="' + baseUrl + '/web-mail/track/open?to_email='+toList[i]+'&statistic_id=' + id + '"/>');
+						$('#composebody').val(content + '<img src="' + baseUrl + '/web-mail/track/open?to_email=' + toEmail + '&statistic_id=' + id + '"/>');
 					}
 					rcmail.command('send','', this, e.originalEvent);
 				},
